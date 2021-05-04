@@ -10,6 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var icone: UIImageView!
     @IBOutlet var viewResult: UIView!
     @IBOutlet weak var resultText: UILabel!
     var imc = IMC()
@@ -19,17 +20,21 @@ class ResultViewController: UIViewController {
         resultText.text = imc.remarque
         viewResult.backgroundColor=imc.couleur
         // Do any additional setup after loading the view.
+       
+        switch imc.evaluation{
+        case  18,5..<25:
+            icone.image = UIImage(named: "success")
+        case 25..<30:
+            icone.image = UIImage(named: "warning1")
+        case 30..<35:
+            icone.image = UIImage(named: "warning2")
+        case 35..<40:
+            icone.image = UIImage(named: "warning3")
+        default:
+            icone.image = UIImage(named: "stop2")
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
