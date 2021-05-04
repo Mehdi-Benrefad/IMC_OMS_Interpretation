@@ -31,7 +31,13 @@ struct IMC {
         }
     }
     
-    func message_couleur() -> (String,UIColor){
+    var icone : String{
+        get{
+            return message_couleur().2
+        }
+    }
+    
+    func message_couleur() -> (String,UIColor,String){
         var evaluation: Float{
             get{
                 return poid/pow(taille,2)
@@ -40,17 +46,17 @@ struct IMC {
         
         switch evaluation{
         case  0..<18,5:
-            return ("Perte de poids inexpliquée, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.black)
+            return ("Perte de poids inexpliquée, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.black,"stop2")
         case  18,5..<25:
-            return ("Poids normale, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemGreen)
+            return ("Poids normale, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemGreen,"success")
         case 25..<30:
-            return ("Surpoids, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemYellow)
+            return ("Surpoids, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemYellow,"warning1")
         case 30..<35:
-            return("Obésité modérée, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemOrange)
+            return("Obésité modérée, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemOrange,"warning2")
         case 35..<40:
-            return("Obésité sévère, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemRed)
+            return("Obésité sévère, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemRed,"warning3")
         default:
-            return("Obésité massive, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.black)
+            return("Obésité massive, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.black,"stop2")
         }
        
     }

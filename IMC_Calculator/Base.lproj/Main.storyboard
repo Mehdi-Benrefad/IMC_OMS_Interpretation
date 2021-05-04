@@ -106,7 +106,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TEST" id="zjv-Oi-6Eu"/>
+                    <navigationItem key="navigationItem" title="TEST" id="zjv-Oi-6Eu">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fqs-Bl-8pI"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="poid" destination="1lu-0q-xh4" id="1bK-sr-Y6Y"/>
                         <outlet property="taille" destination="cfb-wv-XVN" id="xTL-lO-ZGs"/>

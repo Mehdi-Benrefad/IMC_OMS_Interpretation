@@ -12,7 +12,6 @@
 		4F270E0A26405BA900757159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F270E0926405BA900757159 /* SceneDelegate.swift */; };
 		4F270E0C26405BA900757159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F270E0B26405BA900757159 /* ViewController.swift */; };
 		4F270E0F26405BA900757159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F270E0D26405BA900757159 /* Main.storyboard */; };
-		4F270E1226405BA900757159 /* IMC_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F270E1026405BA900757159 /* IMC_Calculator.xcdatamodeld */; };
 		4F270E1426405BB400757159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F270E1326405BB400757159 /* Assets.xcassets */; };
 		4F270E1726405BB400757159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F270E1526405BB400757159 /* LaunchScreen.storyboard */; };
 		4F270E2226405BB400757159 /* IMC_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F270E2126405BB400757159 /* IMC_CalculatorTests.swift */; };
@@ -45,7 +44,6 @@
 		4F270E0926405BA900757159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F270E0B26405BA900757159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F270E0E26405BA900757159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4F270E1126405BA900757159 /* IMC_Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IMC_Calculator.xcdatamodel; sourceTree = "<group>"; };
 		4F270E1326405BB400757159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F270E1626405BB400757159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F270E1826405BB400757159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,14 +105,13 @@
 		4F270E0626405BA900757159 /* IMC_Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				4F270E0726405BA900757159 /* AppDelegate.swift */,
-				4F270E0926405BA900757159 /* SceneDelegate.swift */,
-				4F48203A2640F97E000070E3 /* Controller */,
 				4F4820382640F963000070E3 /* Model */,
 				4F4820392640F970000070E3 /* View */,
+				4F48203A2640F97E000070E3 /* Controller */,
+				4F270E0726405BA900757159 /* AppDelegate.swift */,
+				4F270E0926405BA900757159 /* SceneDelegate.swift */,
 				4F270E1326405BB400757159 /* Assets.xcassets */,
 				4F270E1826405BB400757159 /* Info.plist */,
-				4F270E1026405BA900757159 /* IMC_Calculator.xcdatamodeld */,
 				4F026C8C264091E80013EDF8 /* Balham.otf */,
 			);
 			path = IMC_Calculator;
@@ -297,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F270E0C26405BA900757159 /* ViewController.swift in Sources */,
-				4F270E1226405BA900757159 /* IMC_Calculator.xcdatamodeld in Sources */,
 				4F270E0826405BA900757159 /* AppDelegate.swift in Sources */,
 				4F48203C2640FA1F000070E3 /* IMC.swift in Sources */,
 				4F270E0A26405BA900757159 /* SceneDelegate.swift in Sources */,
@@ -624,19 +620,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4F270E1026405BA900757159 /* IMC_Calculator.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4F270E1126405BA900757159 /* IMC_Calculator.xcdatamodel */,
-			);
-			currentVersion = 4F270E1126405BA900757159 /* IMC_Calculator.xcdatamodel */;
-			path = IMC_Calculator.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4F270DFC26405BA800757159 /* Project object */;
 }
