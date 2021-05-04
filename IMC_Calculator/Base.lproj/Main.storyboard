@@ -56,7 +56,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3vn-Go-rd9" kind="show" id="3sN-9n-0Dy"/>
+                                    <action selector="tester:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0B-1k-Ppz"/>
+                                    <segue destination="3vn-Go-rd9" kind="show" identifier="segueToResult" id="3sN-9n-0Dy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taille:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjE-Ad-0nG">
@@ -118,7 +119,7 @@
         <!--Resultat-->
         <scene sceneID="nGt-AE-DlH">
             <objects>
-                <viewController id="3vn-Go-rd9" sceneMemberID="viewController">
+                <viewController id="3vn-Go-rd9" customClass="ResultViewController" customModule="IMC_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Kx-5i-DAN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
