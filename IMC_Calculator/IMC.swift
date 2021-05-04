@@ -40,13 +40,13 @@ struct IMC {
         
         switch evaluation{
         case  18,5..<25:
-            return ("Poids normale, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.green)
+            return ("Poids normale, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemGreen)
         case 25..<30:
-            return ("Surpoids, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.yellow)
+            return ("Surpoids, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemYellow)
         case 30..<35:
-            return("Obésité modérée, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.orange)
+            return("Obésité modérée, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemOrange)
         case 35..<40:
-            return("Obésité sévère, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.red)
+            return("Obésité sévère, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemRed)
         default:
             return("Obésité massive, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.black)
         }
