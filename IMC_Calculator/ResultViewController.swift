@@ -10,10 +10,14 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet var viewResult: UIView!
+    @IBOutlet weak var resultText: UILabel!
     var imc = IMC()
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(imc)
+        //print(imc)
+        resultText.text = imc.remarque
+        viewResult.backgroundColor=imc.couleur
         // Do any additional setup after loading the view.
     }
     

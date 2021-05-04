@@ -123,14 +123,27 @@
                     <view key="view" contentMode="scaleToFill" id="1Kx-5i-DAN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssW-9Y-ZSO">
+                                <rect key="frame" x="60" y="180" width="296" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bcB-Eh-PrO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Resultat" id="wFY-Rg-QPL"/>
+                    <connections>
+                        <outlet property="resultText" destination="ssW-9Y-ZSO" id="kQk-f6-5cR"/>
+                        <outlet property="viewResult" destination="1Kx-5i-DAN" id="Hbm-5g-JnL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a33-by-uqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="436" y="-15"/>
+            <point key="canvasLocation" x="434.78260869565219" y="-15.489130434782609"/>
         </scene>
     </scenes>
     <resources>
