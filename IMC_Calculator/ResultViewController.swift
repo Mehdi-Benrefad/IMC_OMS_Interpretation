@@ -30,6 +30,8 @@ class ResultViewController: UIViewController {
             icone.image = UIImage(named: "warning2")
         case 35..<40:
             icone.image = UIImage(named: "warning3")
+        case 0..<18,5:
+            icone.image = UIImage(named: "stop2")
         default:
             icone.image = UIImage(named: "stop2")
         }

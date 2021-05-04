@@ -39,6 +39,8 @@ struct IMC {
         }
         
         switch evaluation{
+        case  0..<18,5:
+            return ("Perte de poids inexpliquée, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.black)
         case  18,5..<25:
             return ("Poids normale, votre IMC =\(String(format: "%.2f",evaluation))",UIColor.systemGreen)
         case 25..<30:
